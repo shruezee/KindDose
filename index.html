@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KindDose – Gentle medicine reminders</title>
+<meta name="description" content="KindDose is an elder-first, accessible iOS medicine reminder: one big button to log a dose, a kind word and a joke after, and no guilt when a dose is missed.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="images/app-icon.jpg" alt="KindDose app icon: a soft pill with a heart" class="icon">
+    <div>
+      <h1>KindDose</h1>
+      <p class="sub">Gentle medicine reminders, designed elder-first for everyone.</p>
+    </div>
+  </header>
+
+  <p class="lead">Most medicine apps feel like a nagging alarm. KindDose is built around one idea:
+  <strong>taking your medicine should take seconds and feel good</strong>. One big button logs a dose,
+  a kind word and a gentle joke follow, and a missed dose gets reassurance, not a red cross.</p>
+
+  <div class="phones">
+    <figure><img src="https://is1-ssl.mzstatic.com/image/thumb/Yno2J3yKIewo1hfzUnoDBw/600x1300bb.jpg" alt="Home screen showing the next medicine and a large I took it button"><figcaption>One card, one big button</figcaption></figure>
+    <figure><img src="https://is1-ssl.mzstatic.com/image/thumb/DR3XOLIzEOKMLYwyEKdxzQ/600x1300bb.jpg" alt="After logging: a check mark, a kind message, and a joke"><figcaption>A kind word and a joke</figcaption></figure>
+    <figure><img src="https://is1-ssl.mzstatic.com/image/thumb/3_SFPCJAtZ8ftbjybm0C0g/600x1300bb.jpg" alt="Four ways to add a medicine: scan, speak, type, or import from Health"><figcaption>Four ways to add a medicine</figcaption></figure>
+  </div>
+
+  <h2>The problem</h2>
+  <p>Older adults often take several medicines a day but struggle with apps that have small text,
+  dense lists, and alarming red warnings. Missing a dose can leave people anxious or ashamed,
+  which makes them less likely to keep using the app at all.</p>
+
+  <h2>Design principles</h2>
+  <ul class="cards">
+    <li><strong>Under 5 seconds to log a dose.</strong> The home screen shows only the next medicine and one large "I took it" button. You can also log straight from the notification.</li>
+    <li><strong>Elder-first, accessible for everyone.</strong> Text scales to the largest iPhone sizes, every control works with VoiceOver, Voice Control, and Switch Control, buttons are at least 60 points tall, and colour is never the only signal.</li>
+    <li><strong>Kind, never guilt.</strong> No red crosses or broken streaks. A missed dose gets "No worries, this happens to everyone", options to record it, and a one-minute breathing exercise.</li>
+    <li><strong>Safe by design.</strong> Scanned or spoken medicines are never saved without an "Is this correct?" check, and the app never gives medical advice. For missed doses it points people to their leaflet or pharmacist.</li>
+    <li><strong>Private.</strong> No accounts, ads, analytics, or network calls. Everything stays on the device.</li>
+  </ul>
+
+  <div class="phones">
+    <figure><img src="https://is1-ssl.mzstatic.com/image/thumb/uFBQsNNZHQyRtWLeyYjiXQ/600x1300bb.jpg" alt="Is this correct? confirmation form with name, dose, form, instructions and times"><figcaption>Always confirmed before saving</figcaption></figure>
+    <figure><img src="images/05-breathe.jpg" alt="Breathing exercise with a calm circle and Breathe in prompt"><figcaption>Breathe with me</figcaption></figure>
+  </div>
+
+  <figure class="wide"><img src="https://is1-ssl.mzstatic.com/image/thumb/N33lV6VIn-80MbDy94OwUQ/900x1200bb.jpg" alt="Missed dose screen: No worries, Mary. This happens to everyone now and then, with I took it late, I skipped it, and Breathe with me"><figcaption>A missed dose gets reassurance, not blame</figcaption></figure>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Adaptive first-launch setup: name, text size, "for me" or "for someone I care for"</li>
+    <li>Add medicines by <strong>scanning</strong> a label or handwritten list (on-device text recognition), <strong>speaking</strong> it, <strong>typing</strong> it, or <strong>importing</strong> from Apple Health</li>
+    <li>Time-sensitive reminders with "I took it" and "Remind me in 10 minutes" actions, gentle follow-ups, and an optional alarm sound that rings in Silent mode on iOS 26</li>
+    <li>A validation message and a clean, all-ages joke after every dose</li>
+    <li>Kind history with soft streaks ("5 days in a row 🌱"), never "streak broken"</li>
+    <li>Home Screen and Lock Screen widgets, plus Siri: "I took my medicine in KindDose"</li>
+    <li>Calm backgrounds that follow the time of day and respect Reduce Motion and Increase Contrast</li>
+  </ul>
+
+  <figure class="wide"><img src="https://is1-ssl.mzstatic.com/image/thumb/6JihzRf7wj856MC3hy8vAg/900x1200bb.jpg" alt="KindDose home screen on iPad"><figcaption>Works on iPhone and iPad</figcaption></figure>
+
+  <h2>Built with</h2>
+  <p class="tags"><span>Swift</span><span>SwiftUI</span><span>SwiftData</span><span>WidgetKit</span><span>App Intents</span><span>UserNotifications</span><span>AlarmKit</span><span>VisionKit</span><span>Speech</span><span>HealthKit</span><span>Swift Testing</span></p>
+
+  <h2>Support</h2>
+  <p>Questions or problems? Email
+  <a href="mailto:shruthianthropic@gmail.com">shruthianthropic@gmail.com</a>.</p>
+
+  <h3>I missed a dose. What should I do?</h3>
+  <p>In KindDose you can mark it as taken late or skipped. For what to do with the medicine
+  itself, check your medicine leaflet or ask your pharmacist. KindDose does not give medical advice.</p>
+
+  <h3>My reminders don't make a sound.</h3>
+  <p>Check that notifications for KindDose are on in the iPhone Settings app. On newer iPhones you
+  can also turn on the alarm-style sound in KindDose Settings so reminders ring in Silent mode.</p>
+
+  <h3>Does KindDose collect my data?</h3>
+  <p>No. There are no accounts, ads, or tracking, and everything stays on your iPhone.</p>
+
+  <p class="foot"><a href="privacy.html">Privacy Policy</a> · © 2026 ShruthiRamKum</p>
+</main>
+</body>
+</html>
