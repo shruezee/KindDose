@@ -6,6 +6,13 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52805D50306E38D500403CD3 /* project.md in Resources */ = {isa = PBXBuildFile; fileRef = 52805D4F306E38D500403CD3 /* project.md */; };
+		529CBF27306F8A4100C21F34 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529CBF26306F8A4100C21F34 /* WidgetKit.framework */; };
+		529CBF29306F8A4100C21F34 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529CBF28306F8A4100C21F34 /* SwiftUI.framework */; };
+		529CBF34306F8A4400C21F34 /* KindDoseWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 529CBF24306F8A4100C21F34 /* KindDoseWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		52805D35306E389000403CD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +28,61 @@
 			remoteGlobalIDString = 52805D24306E388E00403CD3;
 			remoteInfo = KindDose;
 		};
+		529CBF32306F8A4400C21F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52805D1D306E388E00403CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529CBF23306F8A4100C21F34;
+			remoteInfo = KindDoseWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		529CBF39306F8A4400C21F34 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				529CBF34306F8A4400C21F34 /* KindDoseWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52805D25306E388E00403CD3 /* KindDose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindDose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52805D34306E389000403CD3 /* KindDoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindDoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52805D3E306E389000403CD3 /* KindDoseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindDoseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52805D4F306E38D500403CD3 /* project.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = project.md; sourceTree = "<group>"; };
+		529CBF24306F8A4100C21F34 /* KindDoseWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KindDoseWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		529CBF26306F8A4100C21F34 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		529CBF28306F8A4100C21F34 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		529CBF41306F8B6F00C21F34 /* KindDoseWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KindDoseWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		529CBEF6306F7A0700C21F34 /* Exceptions for "KindDose" folder in "KindDose" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 52805D24306E388E00403CD3 /* KindDose */;
+		};
+		529CBF38306F8A4400C21F34 /* Exceptions for "KindDoseWidget" folder in "KindDoseWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 529CBF23306F8A4100C21F34 /* KindDoseWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		52805D27306E388E00403CD3 /* KindDose */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				529CBEF6306F7A0700C21F34 /* Exceptions for "KindDose" folder in "KindDose" target */,
+			);
 			path = KindDose;
 			sourceTree = "<group>";
 		};
@@ -43,6 +94,14 @@
 		52805D41306E389000403CD3 /* KindDoseUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = KindDoseUITests;
+			sourceTree = "<group>";
+		};
+		529CBF2A306F8A4100C21F34 /* KindDoseWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				529CBF38306F8A4400C21F34 /* Exceptions for "KindDoseWidget" folder in "KindDoseWidgetExtension" target */,
+			);
+			path = KindDoseWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -63,15 +122,26 @@
 			files = (
 			);
 		};
+		529CBF21306F8A4100C21F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				529CBF29306F8A4100C21F34 /* SwiftUI.framework in Frameworks */,
+				529CBF27306F8A4100C21F34 /* WidgetKit.framework in Frameworks */,
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		52805D1C306E388E00403CD3 = {
 			isa = PBXGroup;
 			children = (
+				529CBF41306F8B6F00C21F34 /* KindDoseWidgetExtension.entitlements */,
 				52805D27306E388E00403CD3 /* KindDose */,
 				52805D37306E389000403CD3 /* KindDoseTests */,
 				52805D41306E389000403CD3 /* KindDoseUITests */,
+				52805D4F306E38D500403CD3 /* project.md */,
+				529CBF2A306F8A4100C21F34 /* KindDoseWidget */,
+				529CBF25306F8A4100C21F34 /* Frameworks */,
 				52805D26306E388E00403CD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,8 +152,18 @@
 				52805D25306E388E00403CD3 /* KindDose.app */,
 				52805D34306E389000403CD3 /* KindDoseTests.xctest */,
 				52805D3E306E389000403CD3 /* KindDoseUITests.xctest */,
+				529CBF24306F8A4100C21F34 /* KindDoseWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		529CBF25306F8A4100C21F34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				529CBF26306F8A4100C21F34 /* WidgetKit.framework */,
+				529CBF28306F8A4100C21F34 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +176,12 @@
 				52805D21306E388E00403CD3 /* Sources */,
 				52805D22306E388E00403CD3 /* Frameworks */,
 				52805D23306E388E00403CD3 /* Resources */,
+				529CBF39306F8A4400C21F34 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
+			);
+			dependencies = (
+				529CBF33306F8A4400C21F34 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				52805D27306E388E00403CD3 /* KindDose */,
@@ -149,6 +233,24 @@
 			productReference = 52805D3E306E389000403CD3 /* KindDoseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		529CBF23306F8A4100C21F34 /* KindDoseWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529CBF35306F8A4400C21F34 /* Build configuration list for PBXNativeTarget "KindDoseWidgetExtension" */;
+			buildPhases = (
+				529CBF20306F8A4100C21F34 /* Sources */,
+				529CBF21306F8A4100C21F34 /* Frameworks */,
+				529CBF22306F8A4100C21F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				529CBF2A306F8A4100C21F34 /* KindDoseWidget */,
+			);
+			name = KindDoseWidgetExtension;
+			productName = KindDoseWidgetExtension;
+			productReference = 529CBF24306F8A4100C21F34 /* KindDoseWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +272,9 @@
 						CreatedOnToolsVersion = 27.0;
 						TestTargetID = 52805D24306E388E00403CD3;
 					};
+					529CBF23306F8A4100C21F34 = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = 52805D20306E388E00403CD3 /* Build configuration list for PBXProject "KindDose" */;
@@ -189,6 +294,7 @@
 				52805D24306E388E00403CD3 /* KindDose */,
 				52805D33306E389000403CD3 /* KindDoseTests */,
 				52805D3D306E389000403CD3 /* KindDoseUITests */,
+				529CBF23306F8A4100C21F34 /* KindDoseWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +303,7 @@
 		52805D23306E388E00403CD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				52805D50306E38D500403CD3 /* project.md in Resources */,
 			);
 		};
 		52805D32306E389000403CD3 /* Resources */ = {
@@ -205,6 +312,11 @@
 			);
 		};
 		52805D3C306E389000403CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		529CBF22306F8A4100C21F34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -227,6 +339,11 @@
 			files = (
 			);
 		};
+		529CBF20306F8A4100C21F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -239,6 +356,11 @@
 			isa = PBXTargetDependency;
 			target = 52805D24306E388E00403CD3 /* KindDose */;
 			targetProxy = 52805D3F306E389000403CD3 /* PBXContainerItemProxy */;
+		};
+		529CBF33306F8A4400C21F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529CBF23306F8A4100C21F34 /* KindDoseWidgetExtension */;
+			targetProxy = 529CBF32306F8A4400C21F34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -369,23 +491,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KindDose/KindDose.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 73RC6SBX5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KindDose/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KindDose;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KindDose uses your camera to scan a medicine label or packet, so you don't have to type it all in. Nothing leaves your device.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "KindDose can read medicines you already track in Health, so you don't have to add them twice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "KindDose only reads your medicine list from Health. It never adds or changes anything in Health.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KindDose uses your microphone so you can add a medicine by speaking its name and dose out loud.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "KindDose turns your spoken words into text, kept on your device where possible, so you can add a medicine by voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KindDose;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shruthi.kinddose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -401,23 +534,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KindDose/KindDose.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 73RC6SBX5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KindDose/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KindDose;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KindDose uses your camera to scan a medicine label or packet, so you don't have to type it all in. Nothing leaves your device.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "KindDose can read medicines you already track in Health, so you don't have to add them twice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "KindDose only reads your medicine list from Health. It never adds or changes anything in Health.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KindDose uses your microphone so you can add a medicine by speaking its name and dose out loud.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "KindDose turns your spoken words into text, kept on your device where possible, so you can add a medicine by voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KindDose;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shruthi.kinddose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -436,7 +580,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73RC6SBX5Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindDoseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,7 +602,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73RC6SBX5Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindDoseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,6 +623,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73RC6SBX5Y;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindDoseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +644,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73RC6SBX5Y;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindDoseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +655,92 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = KindDose;
+			};
+			name = Release;
+		};
+		529CBF36306F8A4400C21F34 /* Debug configuration for PBXNativeTarget "KindDoseWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = KindDoseWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 73RC6SBX5Y;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KindDoseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KindDoseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shruthi.kinddose.KindDoseWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		529CBF37306F8A4400C21F34 /* Release configuration for PBXNativeTarget "KindDoseWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = KindDoseWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 73RC6SBX5Y;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KindDoseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KindDoseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shruthi.kinddose.KindDoseWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
 			name = Release;
 		};
@@ -544,6 +776,14 @@
 			buildConfigurations = (
 				52805D4D306E389000403CD3 /* Debug configuration for PBXNativeTarget "KindDoseUITests" */,
 				52805D4E306E389000403CD3 /* Release configuration for PBXNativeTarget "KindDoseUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		529CBF35306F8A4400C21F34 /* Build configuration list for PBXNativeTarget "KindDoseWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529CBF36306F8A4400C21F34 /* Debug configuration for PBXNativeTarget "KindDoseWidgetExtension" */,
+				529CBF37306F8A4400C21F34 /* Release configuration for PBXNativeTarget "KindDoseWidgetExtension" */,
 			);
 			defaultConfigurationName = Release;
 		};

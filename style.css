@@ -1,0 +1,26 @@
+:root { --bg: #eef5f8; --ink: #1d2b3a; --soft: #50606f; --accent: #c4543f; --card: #ffffff; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121a2b; --ink: #eef2f8; --soft: #b4bfcd; --accent: #f59482; --card: #1d2638; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.65 -apple-system, system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { color: var(--accent); font-size: 2.2rem; line-height: 1.2; margin: 0 0 4px; }
+h2 { margin: 32px 0 8px; font-size: 1.35rem; }
+h3 { margin: 20px 0 4px; font-size: 1.1rem; }
+.sub { color: var(--soft); margin: 0 0 24px; }
+a { color: var(--accent); }
+.foot { margin-top: 40px; font-size: 0.95rem; }
+.hero { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.hero h1 { margin: 0; }
+.hero .sub { margin: 4px 0 0; }
+.icon { width: 80px; height: 80px; border-radius: 20px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); flex-shrink: 0; }
+.lead { font-size: 1.1rem; }
+.phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin: 24px 0; }
+figure { margin: 0; text-align: center; }
+.phones img { width: 100%; border-radius: 22px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
+.wide { margin: 24px 0; }
+.wide img { width: 100%; max-width: 620px; border-radius: 18px; box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
+figcaption { margin-top: 8px; font-size: 0.9rem; color: var(--soft); }
+.cards { list-style: none; padding: 0; display: grid; gap: 12px; }
+.cards li { background: var(--card); border-radius: 14px; padding: 14px 16px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags span { background: var(--card); border-radius: 999px; padding: 4px 12px; font-size: 0.9rem; }
