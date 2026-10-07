@@ -101,6 +101,6 @@ project.md           The product and accessibility rules the app was built again
 
 ## About
 
-Designed and built by **[Shruthi](https://github.com/shruezee)**, an iOS developer in Sydney. KindDose is a reminder tool, not medical advice.
+Designed and built by **Shruezee Studio**, the app studio of **[Shruthi](https://github.com/shruezee)**, an iOS developer in Sydney. KindDose is a reminder tool, not medical advice.
 
 © 2026 Shruezee Studio
