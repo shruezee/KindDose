@@ -60,7 +60,7 @@ pill,reminder,medication,tracker,alarm,elderly,seniors,large text,accessible,dos
 - **Privacy Policy URL:** https://shruezee.github.io/KindDose/privacy.html
 
 ## Copyright
-2026 ShruthiRamKum
+2026 Shruezee Studio
 
 ## Age Rating answers
 - Parental Controls: No · Age Assurance: No

@@ -35,7 +35,7 @@ struct SplashView: View {
 
                 Spacer()
 
-                Text("© 2026 shruthiramkum")
+                Text("© 2026 Shruezee Studio")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
